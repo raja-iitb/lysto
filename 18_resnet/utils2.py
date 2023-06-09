@@ -23,7 +23,7 @@ def get_data(batch_size=64):
         # transforms.Grayscale(num_output_channels=1)
     ])
 
-    dataset_class = datasets.ImageFolder('data', transform=transform)
+    dataset_class = datasets.ImageFolder('data10', transform=transform)
     print(f'Classes - {dataset_class.class_to_idx} \n\n')
     dataset_train, dataset_valid = data.random_split(dataset_class, train_test_split)
     # dataset_train = datasets.ImageFolder(f'data', transform=transform)
